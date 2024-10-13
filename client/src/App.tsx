@@ -131,7 +131,7 @@ function App() {
       {getLocalImagesState ? (
       <button className='showDeleteButton' onClick={()=>setShowDelete(!showDelete)}><i className="bi bi-trash"></i></button>
       ) : <></>}
-      <Images passedIt={setShowDelete} passed={showDelete}  data={slides} onClick={(curIdx)=>setIndex(curIdx)} />
+      <Images getLIState={getLocalImagesState} passedIt={setShowDelete} passed={showDelete}  data={slides} onClick={(curIdx)=>setIndex(curIdx)} />
 
       <div style={{ width: "100%", maxWidth: "900px", aspectRatio: "3 / 2" }}>
         <Lightbox
