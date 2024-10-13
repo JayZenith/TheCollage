@@ -186,7 +186,7 @@ function SetImage(props: any){
     }
         */
 
-    let theArray = "";
+    let theArray = [];
         if(!props.getLIState){ //getting global array then set array to local storage specifically and push the item 
           var retrievedObject = localStorage.getItem('theKey');
           //console.log(JSON.parse(retrievedObject || '{}'));
