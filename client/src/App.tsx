@@ -105,7 +105,7 @@ function App() {
       <nav className='navbar'>
         <ul> 
           <li><h2><a href="#">Home</a></h2></li>
-          <li><button onClick={()=>setGetLocalImagesState(!getLocalImagesState)}>Toggle Global vs Local</button></li>
+          <li><button onClick={()=>setGetLocalImagesState(!getLocalImagesState)}>{getLocalImagesState ? "We Are Local" : "We Are Global"}</button></li>
         </ul>
        
       </nav>
@@ -128,7 +128,9 @@ function App() {
     {render ? (
       
     <div className='test'>
+      {getLocalImagesState ? (
       <button className='showDeleteButton' onClick={()=>setShowDelete(!showDelete)}><i className="bi bi-trash"></i></button>
+      ) : <></>}
       <Images passedIt={setShowDelete} passed={showDelete}  data={slides} onClick={(curIdx)=>setIndex(curIdx)} />
 
       <div style={{ width: "100%", maxWidth: "900px", aspectRatio: "3 / 2" }}>
