@@ -29,9 +29,11 @@ const Images: FC<ImagesProps> = (props) => {
     //console.log(arr)
     localStorage.setItem("theKey", JSON.stringify(arr));
     ///////////////////////////////////////////
+    /*
     await fetch(`http://localhost:5174/images/${idx}`,{
       method: "DELETE",
     });
+    */
 
 
     props.passedIt(false);
