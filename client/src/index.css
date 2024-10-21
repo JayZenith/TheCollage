@@ -10,7 +10,7 @@
   margin: auto auto; /*center*/
   display: grid;
   /*grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));*/
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 225px));
   gap: 1rem;
 }
 
@@ -241,6 +241,18 @@ input[type="file"] {
     align-items: center;
     justify-content: center;
    
+  }
+
+  .images-container{
+ 
+    padding-top: 20px;
+    max-width: 1300px;
+  
+    margin: auto auto; /*center*/
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));*/
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
   }
 
 
