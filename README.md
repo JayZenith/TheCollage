@@ -19,7 +19,7 @@ Clone down this repository. You will need `node.js` and `git` installed globally
 
 ## 🛠 Installation and Setup Instructions
 
-1. Installation: `npm install` within client and server directories 
+1. Installation: `npm install`
 
 2. In the server directory, you can run: `npm run start` 
 
