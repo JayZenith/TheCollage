@@ -186,6 +186,13 @@ input[type="file"] {
   color: white;
 }
 
+.test{
+  /*matched the image-container*/
+  max-width: 1300px;
+  margin: auto auto; /*center*/
+  
+}
+
 
 
 

@@ -101,6 +101,7 @@ function App() {
 
   return (
     <>
+    
     <header>
       <nav className='navbar'>
         <ul> 
@@ -110,7 +111,7 @@ function App() {
        
       </nav>
     </header>
-    <div className='addUrl'>
+    {/*<div className='addUrl'>
       <form onSubmit={imageSubmit}>
         <p>{errMsg}</p>
         <div className='makeRow'>
@@ -120,14 +121,26 @@ function App() {
         </div>
       </form>
 
-      {/* const [getLocalImagesState, setGetLocalImagesState] = useState<boolean>(false) */}
       
       <SetImage getLIState={getLocalImagesState}  imageUpload={imageUpload} setImageUpload={setImageUpload} slides={slides} />
-    </div>
+    </div>*/}
+    
     
     {render ? (
       
     <div className='test'>
+      <div className='addUrl'>
+        <form onSubmit={imageSubmit}>
+          <p>{errMsg}</p>
+          <div className='makeRow'>
+            <h2>Upload Image URL:</h2>
+            <input className='urlInput' type="text" placeholder="Enter image link" value={theUrl} onChange={(e)=>handleUrl(e)}/>
+            <button type="submit" className='submitButton'>Submit</button>
+          </div>
+        </form>
+        <SetImage getLIState={getLocalImagesState}  imageUpload={imageUpload} setImageUpload={setImageUpload} slides={slides} />
+      </div>
+
       {getLocalImagesState ? (
       <button className='showDeleteButton' onClick={()=>setShowDelete(!showDelete)}><i className="bi bi-trash"></i></button>
       ) : <></>}
